@@ -1,0 +1,9115 @@
+{
+  "formatVersion": 3,
+  "displayRule": "protected-and-current-target",
+  "method": "f2l-fr",
+  "sources": [
+    {
+      "title": "CubingApp F2L — case scope reference",
+      "url": "https://cubingapp.com/algorithms/F2L"
+    }
+  ],
+  "cases": [
+    {
+      "id": "f2l-fr-01",
+      "name": "F2L 01 · 흰색 R / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "R",
+          "R",
+          "G",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "B",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "G",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-02",
+      "name": "F2L 02 · 흰색 F / 초록 엣지 L",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 L 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "W",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "R",
+          "R",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "B",
+          "B",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "O",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-03",
+      "name": "F2L 03 · 흰색 F / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "O",
+          "Y",
+          "B",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U R U' R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-04",
+      "name": "F2L 04 · 흰색 R / 초록 엣지 F",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "G",
+          "G",
+          "G",
+          "G",
+          "R",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "B",
+          "B",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "B",
+          "O",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' F' U F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-05",
+      "name": "F2L 05 · 흰색 U / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "B",
+          "O",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "R",
+          "R",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "Y",
+          "B",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "O",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U2 F' U' F R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-06",
+      "name": "F2L 06 · 흰색 U / 초록 엣지 B",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 B 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "R",
+          "Y",
+          "O",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "G",
+          "G",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "R",
+          "Y",
+          "G",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "B",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U2 R U R' F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-07",
+      "name": "F2L 07 · 흰색 U / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "B",
+          "O",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "Y",
+          "O",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "O",
+          "Y",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U2 R' U' R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-08",
+      "name": "F2L 08 · 흰색 F / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "B",
+          "O",
+          "W",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "R",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "G",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U F U2 R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-09",
+      "name": "F2L 09 · 흰색 U / 초록 엣지 F",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "B"
+        ],
+        "B": [
+          "R",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "R",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "G",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U2 F U F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-10",
+      "name": "F2L 10 · 흰색 R / 초록 엣지 R",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "Y",
+          "G",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "G",
+          "R",
+          "G",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "R",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U' R' U2 F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-11",
+      "name": "F2L 11 · 흰색 R / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "R",
+          "R",
+          "G",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "Y",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "G",
+          "R",
+          "B",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "O",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "B",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U R' U R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-12",
+      "name": "F2L 12 · 흰색 R / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "R",
+          "G",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "B"
+        ],
+        "B": [
+          "Y",
+          "B",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "B",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U' R' U R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-13",
+      "name": "F2L 13 · 흰색 R / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "R",
+          "O",
+          "G",
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "B"
+        ],
+        "B": [
+          "G",
+          "R",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "O",
+          "Y",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "O",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "G",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U F' U2 F U' R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-14",
+      "name": "F2L 14 · 흰색 F / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "Y",
+          "O",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "B",
+          "G",
+          "R",
+          "O",
+          "O",
+          "B",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "O",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "R",
+          "G",
+          "R",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U R' U2 R U' R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-15",
+      "name": "F2L 15 · 흰색 F / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "R"
+        ],
+        "B": [
+          "Y",
+          "B",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "R",
+          "O",
+          "O",
+          "O",
+          "O",
+          "B",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "O",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "R",
+          "Y",
+          "G",
+          "G",
+          "Y",
+          "Y",
+          "B",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "Y",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U2 R' U2 R U' R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-16",
+      "name": "F2L 16 · 흰색 R / 초록 엣지 L",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 L 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "R",
+          "G",
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "R"
+        ],
+        "B": [
+          "O",
+          "G",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "G",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "G",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "Y",
+          "B",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U F' U' F U2 F' U F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-17",
+      "name": "F2L 17 · 흰색 R / 초록 엣지 B",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 B 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "B",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "R"
+        ],
+        "B": [
+          "Y",
+          "G",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "G",
+          "Y",
+          "O",
+          "O",
+          "B",
+          "O",
+          "O"
+        ],
+        "L": [
+          "O",
+          "R",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "O",
+          "R",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "Y",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U F' U2 F U2 F' U F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-18",
+      "name": "F2L 18 · 흰색 F / 초록 엣지 B",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 B 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "B",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "R"
+        ],
+        "B": [
+          "G",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "R",
+          "Y",
+          "B",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "Y",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U' R' U F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-19",
+      "name": "F2L 19 · 흰색 F / 초록 엣지 R",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "Y",
+          "Y",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "G",
+          "B",
+          "R",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "B",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "R",
+          "O",
+          "O",
+          "Y",
+          "Y",
+          "O",
+          "G",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U2 R' U F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-20",
+      "name": "F2L 20 · 흰색 F / 초록 엣지 F",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "W",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "Y",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "B",
+          "G",
+          "Y",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "R",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U F' U F U' F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-21",
+      "name": "F2L 21 · 흰색 U / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "B",
+          "O",
+          "O",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "R",
+          "Y",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "Y",
+          "Y",
+          "R",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "O",
+          "O",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "B",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "G",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U R' F' U F R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-22",
+      "name": "F2L 22 · 흰색 U / 초록 엣지 R",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "Y",
+          "O",
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "B"
+        ],
+        "B": [
+          "G",
+          "G",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "G",
+          "R",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "O",
+          "Y",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U' F R U' R' F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-23",
+      "name": "F2L 23 · 흰색 U / 초록 엣지 U",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "B",
+          "O",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "Y",
+          "O",
+          "R",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "Y",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "G",
+          "Y",
+          "O",
+          "Y",
+          "G",
+          "R",
+          "Y",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U R U R' F' U' F R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-24",
+      "name": "F2L 24 · 흰색 U / 초록 엣지 L",
+      "category": "1. 두 조각 모두 윗층",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 L 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "B",
+          "O",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "B"
+        ],
+        "B": [
+          "R",
+          "R",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "O",
+          "B",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "O",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "Y",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U' R' F' U2 F R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-25",
+      "name": "F2L 25 · 흰색 R / 초록 엣지 F",
+      "category": "2. 코너가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "G",
+          "G",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "R",
+          "R",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "W",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "Y",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "O",
+          "B",
+          "Y",
+          "Y",
+          "B",
+          "O",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U2 R' F' U2 F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-26",
+      "name": "F2L 26 · 흰색 R / 초록 엣지 U",
+      "category": "2. 코너가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "B",
+          "O",
+          "B",
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "G",
+          "Y",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "R",
+          "R",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "W",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "O",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "G",
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "G",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U F' U F R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-27",
+      "name": "F2L 27 · 흰색 F / 초록 엣지 U",
+      "category": "2. 코너가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "O",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "W"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "B",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "Y",
+          "R",
+          "Y",
+          "Y",
+          "R",
+          "O",
+          "G",
+          "R"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' F' U2 F R U2 R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-28",
+      "name": "F2L 28 · 흰색 F / 초록 엣지 F",
+      "category": "2. 코너가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "R",
+          "G",
+          "R",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "W"
+        ],
+        "B": [
+          "Y",
+          "Y",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "G",
+          "B",
+          "R",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "B",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "O",
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U2 R U' R' F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-29",
+      "name": "F2L 29 · 흰색 D / 초록 엣지 U",
+      "category": "2. 코너가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 D 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "B",
+          "O",
+          "R",
+          "G",
+          "G",
+          "R",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "O",
+          "Y",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "Y",
+          "O",
+          "G",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "B",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "G",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "G",
+          "B"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U2 F U2 R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-30",
+      "name": "F2L 30 · 흰색 D / 초록 엣지 F",
+      "category": "2. 코너가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 D 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "G",
+          "G",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "R",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "Y",
+          "Y",
+          "B",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "R",
+          "B",
+          "O",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U R U' R' U' F' U F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-31",
+      "name": "F2L 31 · 흰색 U / 초록 엣지 R",
+      "category": "3. 엣지가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "B",
+          "O",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "G",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "Y",
+          "R",
+          "G",
+          "Y",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "Y",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U F R U2 R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-32",
+      "name": "F2L 32 · 흰색 R / 초록 엣지 F",
+      "category": "3. 엣지가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "R",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "G",
+          "G",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "B",
+          "R",
+          "O",
+          "O",
+          "O",
+          "B",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "O",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U2 R' U R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-33",
+      "name": "F2L 33 · 흰색 R / 초록 엣지 R",
+      "category": "3. 엣지가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "R",
+          "R",
+          "G",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "Y",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "O",
+          "Y",
+          "G",
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U2 F' U F U R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-34",
+      "name": "F2L 34 · 흰색 F / 초록 엣지 F",
+      "category": "3. 엣지가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "G",
+          "W",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "R"
+        ],
+        "B": [
+          "B",
+          "R",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "B",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U' R U' R' U2 R U' R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-35",
+      "name": "F2L 35 · 흰색 F / 초록 엣지 R",
+      "category": "3. 엣지가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "B",
+          "Y",
+          "W",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "B"
+        ],
+        "B": [
+          "G",
+          "G",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "B",
+          "R",
+          "G",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "O",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "R",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "U2 R U R' U' F' U F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-36",
+      "name": "F2L 36 · 흰색 U / 초록 엣지 F",
+      "category": "3. 엣지가 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "Y",
+          "O",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "O",
+          "O",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "R",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "R",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "Y",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "B",
+          "B",
+          "Y",
+          "Y",
+          "Y",
+          "G",
+          "W"
+        ],
+        "D": [
+          "W",
+          "W",
+          "Y",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U2 R' F' U2 F U' R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-37",
+      "name": "F2L 37 · 흰색 F / 초록 엣지 R",
+      "category": "4. 두 조각 모두 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "W"
+        ],
+        "B": [
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "Y",
+          "Y",
+          "O",
+          "G",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U F R U' R' U2 R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-38",
+      "name": "F2L 38 · 흰색 R / 초록 엣지 R",
+      "category": "4. 두 조각 모두 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "Y",
+          "Y",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "B",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "R",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O",
+          "W",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "R",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "B",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U' R' F' U F U2 F' U' F",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-39",
+      "name": "F2L 39 · 흰색 R / 초록 엣지 F",
+      "category": "4. 두 조각 모두 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "Y",
+          "R",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "O",
+          "B",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "G",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "W",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "O",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "B",
+          "Y",
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U2 R' U R U' R' U R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-40",
+      "name": "F2L 40 · 흰색 D / 초록 엣지 R",
+      "category": "4. 두 조각 모두 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 D 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "G",
+          "R",
+          "R",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "G",
+          "O",
+          "B",
+          "G",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "Y",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "O",
+          "G",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "F' U2 F U' F' U2 F U' R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    },
+    {
+      "id": "f2l-fr-41",
+      "name": "F2L 41 · 흰색 F / 초록 엣지 F",
+      "category": "4. 두 조각 모두 슬롯 안",
+      "tags": [
+        "F2L",
+        "FR 슬롯",
+        "앱 자체 번호"
+      ],
+      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "state": {
+        "F": [
+          "O",
+          "Y",
+          "Y",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "W"
+        ],
+        "B": [
+          "Y",
+          "R",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "B",
+          "B",
+          "G",
+          "O",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "O",
+          "Y",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "R",
+          "G",
+          "Y",
+          "Y",
+          "Y",
+          "O",
+          "R"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "기본 삽입",
+          "algorithm": "R U2 R' F' U2 F R U R' U' R U R'",
+          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+        }
+      ]
+    }
+  ]
+}
