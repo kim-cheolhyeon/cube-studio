@@ -86,6 +86,8 @@ W 흰색, Y 노랑, R 빨강, O 주황, G 초록, B 파랑. K는 실제 색을 �
 
 ## 파일 위치와 수정
 
+categoryPath는 선택적인 분류 경로 배열입니다. 예를 들어 ["1. 두 조각 모두 위층", "2. 바닥 면이 위를 보지 않는 경우", "1. 위의 두 면이 같은 색"]은 세 단계 폴더를 표시합니다. 없으면 기존 category 하나를 사용합니다. 경로는 비어 있지 않은 문자열 1~8개로 작성하며, protected·focus 규칙에는 영향을 주지 않습니다.
+
 - 원본 데이터: [data/beginner/cases.json](../data/beginner/cases.json)
 - F2L 원본 데이터: [data/f2l/cases.json](../data/f2l/cases.json)
 - 자동 불러오기용 생성 파일: 각 컬렉션 폴더의 cases.bundle.js

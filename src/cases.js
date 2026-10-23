@@ -11,6 +11,7 @@ function validateCaseLibrary(data){
   checkText(item.id,`${prefix} id`,200);checkText(item.name,`${prefix} 이름`,200);
   if(!item.id.trim()||!item.name.trim()||ids.has(item.id))throw Error(`${prefix}: 이름과 중복되지 않는 id가 필요합니다.`);ids.add(item.id);
   for(const key of ['category','description'])if(item[key]!==undefined)checkText(item[key],`${prefix} ${key}`,10000);
+  if(item.categoryPath!==undefined&&(!Array.isArray(item.categoryPath)||!item.categoryPath.length||item.categoryPath.length>8||item.categoryPath.some(t=>typeof t!=='string'||!t.trim()||t.length>200)))throw Error(`${prefix}: categoryPath는 1~8개의 분류 이름이어야 합니다.`);
   if(item.tags!==undefined&&(!Array.isArray(item.tags)||item.tags.length>100||item.tags.some(t=>typeof t!=='string'||t.length>200)))throw Error(`${prefix}: tags는 문자열 목록이어야 합니다.`);
   const counts=Object.fromEntries(Object.keys(colorCodes).map(k=>[k,0])),centers=[];
   for(const face of faceOrder){const cells=item.state?.[face];if(!Array.isArray(cells)||cells.length!==9||cells.some(c=>!Object.hasOwn(colorCodes,c)))throw Error(`${prefix}: ${face}면은 W Y R O G B 코드 9개로 작성해 주세요.`);cells.forEach(c=>counts[c]++);centers.push(cells[4])}
@@ -30,13 +31,11 @@ function renderCaseOptions(){
  const tree=document.querySelector('#case-tree');tree.replaceChildren();
  const collections=[...new Set(caseLibrary.map(item=>item.collection||'초급 해법'))];
  for(const collection of collections){const root=document.createElement('details');root.className='case-collection';root.open=false;const title=document.createElement('summary');title.textContent=collection;root.append(title);const body=document.createElement('div');body.className='case-collection-body';
-  const categories=[...new Set(caseLibrary.filter(item=>(item.collection||'초급 해법')===collection).map(item=>item.category||'기타'))];
-  for(const category of categories){const folder=document.createElement('details');folder.open=false;const heading=document.createElement('summary');heading.textContent=category;folder.append(heading);const leaves=document.createElement('div');leaves.className='case-leaves';
-   caseLibrary.forEach((item,i)=>{if((item.collection||'초급 해법')!==collection||(item.category||'기타')!==category)return;const button=document.createElement('button');button.type='button';button.dataset.caseIndex=String(i);button.textContent=item.name;button.setAttribute('aria-pressed',String(i===0));button.addEventListener('click',()=>{
+  const folders=new Map();
+  caseLibrary.forEach((item,i)=>{if((item.collection||'초급 해법')!==collection)return;let parent=body,key='';for(const category of (item.categoryPath||[item.category||'기타'])){key+=JSON.stringify(category);if(!folders.has(key)){const folder=document.createElement('details');folder.open=false;const heading=document.createElement('summary');heading.textContent=category;folder.append(heading);const leaves=document.createElement('div');leaves.className='case-leaves';folder.append(leaves);parent.append(folder);folders.set(key,leaves)}parent=folders.get(key)}const button=document.createElement('button');button.type='button';button.dataset.caseIndex=String(i);button.textContent=item.name;button.setAttribute('aria-pressed',String(i===0));button.addEventListener('click',()=>{
     if(algorithmSession||caseSession||animation!==null||drag||returnAnimation!==null||queue.length)return;
     caseSelect.value=String(i);chooseCase();document.querySelectorAll('[data-case-index]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));loadSelectedCase();
-   });leaves.append(button)});folder.append(leaves);body.append(folder);
-  }root.append(body);tree.append(root);
+   });parent.append(button)});root.append(body);tree.append(root);
  }
 }
 function setCaseLibrary(data){caseLibrary=validateCaseLibrary(data);caseSelect.value='0';renderCaseOptions();chooseCase();document.querySelector('#case-details').hidden=false}
