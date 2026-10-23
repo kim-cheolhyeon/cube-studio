@@ -86,6 +86,8 @@ W 흰색, Y 노랑, R 빨강, O 주황, G 초록, B 파랑. K는 실제 색을 �
 
 ## 파일 위치와 수정
 
+해법에 선택적으로 segments 배열을 둘 수 있습니다. 각 항목은 label(구간 이름), algorithm(구간 공식), 선택적인 targetCaseId(도착 기본 케이스 ID)를 가집니다. segments의 공식을 순서대로 합친 토큰은 solutions의 algorithm과 일치해야 합니다. 재생은 각 구간 끝에서 멈추고 다시 재생하면 이어집니다. 구간이 없는 기존 해법은 한 번에 재생됩니다. F2L의 basicCase.kind는 A/B/C/D, basicCase.side는 오른쪽/왼쪽을 기록하는 학습용 정보입니다.
+
 categoryPath는 선택적인 분류 경로 배열입니다. 예를 들어 ["1. 두 조각 모두 위층", "2. 바닥 면이 위를 보지 않는 경우", "1. 위의 두 면이 같은 색"]은 세 단계 폴더를 표시합니다. 없으면 기존 category 하나를 사용합니다. 경로는 비어 있지 않은 문자열 1~8개로 작성하며, protected·focus 규칙에는 영향을 주지 않습니다.
 
 - 원본 데이터: [data/beginner/cases.json](../data/beginner/cases.json)

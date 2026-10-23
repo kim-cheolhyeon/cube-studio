@@ -10,15 +10,1434 @@
   ],
   "cases": [
     {
-      "id": "f2l-fr-05",
-      "name": "F2L 05 · 흰색 U / 초록 엣지 U",
+      "id": "f2l-fr-03",
+      "name": "완성 페어 · 오른쪽",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: U\n목표: FR 슬롯에 삽입",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "O",
+          "Y",
+          "B",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "R",
+          "Y",
+          "Y",
+          "G",
+          "Y",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "완성 페어 삽입",
+          "algorithm": "U R U' R'",
+          "segments": [
+            {
+              "label": "완성 페어 오른쪽 삽입",
+              "algorithm": "U R U' R'"
+            }
+          ],
+          "note": "십자가와 다른 슬롯 유지"
+        }
+      ],
+      "categoryPath": [
+        "0. 기본 케이스",
+        "완성 페어"
+      ],
+      "basicCase": {
+        "kind": "A",
+        "side": "오른쪽",
+        "name": "완성 페어"
+      }
+    },
+    {
+      "id": "f2l-fr-04",
+      "name": "완성 페어 · 왼쪽",
+      "category": "1. 두 조각 모두 위층",
+      "tags": [
+        "F2L",
+        "FR 슬롯"
+      ],
+      "description": "코너 흰색: R · 엣지 초록색: F\n목표: FR 슬롯에 삽입",
+      "state": {
+        "F": [
+          "Y",
+          "G",
+          "G",
+          "G",
+          "G",
+          "R",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "B",
+          "B",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "B",
+          "O",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "완성 페어 삽입",
+          "algorithm": "U' F' U F",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽 삽입",
+              "algorithm": "U' F' U F"
+            }
+          ],
+          "note": "십자가와 다른 슬롯 유지"
+        }
+      ],
+      "categoryPath": [
+        "0. 기본 케이스",
+        "완성 페어"
+      ],
+      "basicCase": {
+        "kind": "A",
+        "side": "왼쪽",
+        "name": "완성 페어"
+      }
+    },
+    {
+      "id": "f2l-fr-14",
+      "name": "같은 윗색 · 왼쪽",
+      "category": "1. 두 조각 모두 위층",
+      "tags": [
+        "F2L",
+        "FR 슬롯"
+      ],
+      "description": "코너 흰색: F · 엣지 초록색: U\n목표: 완성 페어 · 오른쪽",
+      "state": {
+        "F": [
+          "O",
+          "G",
+          "W",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "Y",
+          "O",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "B",
+          "G",
+          "R",
+          "O",
+          "O",
+          "B",
+          "O",
+          "O"
+        ],
+        "L": [
+          "B",
+          "O",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "R",
+          "G",
+          "R",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "O",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "완성 페어 오른쪽으로 페어 만들기",
+          "algorithm": "U' R U R' U",
+          "segments": [
+            {
+              "label": "완성 페어 오른쪽으로 페어 만들기",
+              "algorithm": "U' R U R' U",
+              "targetCaseId": "f2l-fr-03"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
+        }
+      ],
+      "categoryPath": [
+        "0. 기본 케이스",
+        "같은 윗색"
+      ],
+      "basicCase": {
+        "kind": "B",
+        "side": "왼쪽",
+        "name": "같은 윗색"
+      }
+    },
+    {
+      "id": "f2l-fr-16",
+      "name": "같은 윗색 · 오른쪽",
+      "category": "1. 두 조각 모두 위층",
+      "tags": [
+        "F2L",
+        "FR 슬롯"
+      ],
+      "description": "코너 흰색: R · 엣지 초록색: L\n목표: 완성 페어 · 왼쪽",
+      "state": {
+        "F": [
+          "O",
+          "R",
+          "G",
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "R"
+        ],
+        "B": [
+          "O",
+          "G",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "G",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "G",
+          "Y",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "B",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "Y",
+          "B",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "G",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "완성 페어 왼쪽으로 페어 만들기",
+          "algorithm": "U F' U' F U'",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 페어 만들기",
+              "algorithm": "U F' U' F U'",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
+        }
+      ],
+      "categoryPath": [
+        "0. 기본 케이스",
+        "같은 윗색"
+      ],
+      "basicCase": {
+        "kind": "B",
+        "side": "오른쪽",
+        "name": "같은 윗색"
+      }
+    },
+    {
+      "id": "f2l-fr-01",
+      "name": "다른 윗색 · 오른쪽",
+      "category": "1. 두 조각 모두 위층",
+      "tags": [
+        "F2L",
+        "FR 슬롯"
+      ],
+      "description": "코너 흰색: R · 엣지 초록색: U\n목표: 완성 페어 · 오른쪽",
+      "state": {
+        "F": [
+          "R",
+          "R",
+          "G",
+          "G",
+          "G",
+          "Y",
+          "G",
+          "G",
+          "Y"
+        ],
+        "B": [
+          "B",
+          "O",
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "W",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O",
+          "G",
+          "O",
+          "O"
+        ],
+        "L": [
+          "Y",
+          "B",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "G",
+          "G",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "O"
+        ],
+        "D": [
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "완성 페어 오른쪽으로 페어 만들기",
+          "algorithm": "U' F' U2 F",
+          "segments": [
+            {
+              "label": "완성 페어 오른쪽으로 페어 만들기",
+              "algorithm": "U' F' U2 F",
+              "targetCaseId": "f2l-fr-03"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
+        }
+      ],
+      "categoryPath": [
+        "0. 기본 케이스",
+        "다른 윗색"
+      ],
+      "basicCase": {
+        "kind": "C",
+        "side": "오른쪽",
+        "name": "다른 윗색"
+      }
+    },
+    {
+      "id": "f2l-fr-02",
+      "name": "다른 윗색 · 왼쪽",
+      "category": "1. 두 조각 모두 위층",
+      "tags": [
+        "F2L",
+        "FR 슬롯"
+      ],
+      "description": "코너 흰색: F · 엣지 초록색: L\n목표: 완성 페어 · 왼쪽",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "W",
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "O"
+        ],
+        "B": [
+          "R",
+          "R",
+          "Y",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "B",
+          "B",
+          "Y",
+          "O",
+          "O",
+          "Y",
+          "O",
+          "O"
+        ],
+        "L": [
+          "G",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "O",
+          "Y",
+          "Y",
+          "O",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "G"
+        ],
+        "D": [
+          "W",
+          "W",
+          "B",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "완성 페어 왼쪽으로 페어 만들기",
+          "algorithm": "U R U2 R'",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 페어 만들기",
+              "algorithm": "U R U2 R'",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
+        }
+      ],
+      "categoryPath": [
+        "0. 기본 케이스",
+        "다른 윗색"
+      ],
+      "basicCase": {
+        "kind": "C",
+        "side": "왼쪽",
+        "name": "다른 윗색"
+      }
+    },
+    {
+      "id": "f2l-fr-05",
+      "name": "바닥색 위 · 오른쪽",
+      "category": "1. 두 조각 모두 위층",
+      "tags": [
+        "F2L",
+        "FR 슬롯"
+      ],
+      "description": "코너 흰색: U · 엣지 초록색: U\n목표: 완성 페어 · 오른쪽",
       "state": {
         "F": [
           "Y",
@@ -225,26 +1644,37 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U2 F' U' F R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 오른쪽으로 페어 만들기",
+          "algorithm": "U2 R U R'",
+          "segments": [
+            {
+              "label": "완성 페어 오른쪽으로 페어 만들기",
+              "algorithm": "U2 R U R'",
+              "targetCaseId": "f2l-fr-03"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "1. 바닥 면이 위를 보는 경우"
-      ]
+        "0. 기본 케이스",
+        "바닥색 위"
+      ],
+      "basicCase": {
+        "kind": "D",
+        "side": "오른쪽",
+        "name": "바닥색 위"
+      }
     },
     {
       "id": "f2l-fr-06",
-      "name": "F2L 06 · 흰색 U / 초록 엣지 B",
+      "name": "바닥색 위 · 왼쪽",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 B 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: B\n목표: 완성 페어 · 왼쪽",
       "state": {
         "F": [
           "R",
@@ -451,26 +1881,37 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U2 R U R' F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 왼쪽으로 페어 만들기",
+          "algorithm": "U2 F' U' F",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 페어 만들기",
+              "algorithm": "U2 F' U' F",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "1. 바닥 면이 위를 보는 경우"
-      ]
+        "0. 기본 케이스",
+        "바닥색 위"
+      ],
+      "basicCase": {
+        "kind": "D",
+        "side": "왼쪽",
+        "name": "바닥색 위"
+      }
     },
     {
       "id": "f2l-fr-07",
-      "name": "F2L 07 · 흰색 U / 초록 엣지 U",
+      "name": "흰색 U / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: U\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -677,9 +2118,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U2 R' U' R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "U R U2 R'",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "U R U2 R'",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -689,14 +2137,13 @@
     },
     {
       "id": "f2l-fr-09",
-      "name": "F2L 09 · 흰색 U / 초록 엣지 F",
+      "name": "흰색 U / 초록 엣지 F",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: F\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "G",
@@ -903,9 +2350,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U2 F U F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "U' F' U2 F",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "U' F' U2 F",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -915,14 +2369,13 @@
     },
     {
       "id": "f2l-fr-21",
-      "name": "F2L 21 · 흰색 U / 초록 엣지 U",
+      "name": "흰색 U / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: U\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "B",
@@ -1129,9 +2582,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U R' F' U F R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "F' U F U2",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "F' U F U2",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -1141,14 +2601,13 @@
     },
     {
       "id": "f2l-fr-22",
-      "name": "F2L 22 · 흰색 U / 초록 엣지 R",
+      "name": "흰색 U / 초록 엣지 R",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: R\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "Y",
@@ -1355,9 +2814,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U' F R U' R' F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "R U' R' U2",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "R U' R' U2",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -1367,14 +2833,13 @@
     },
     {
       "id": "f2l-fr-23",
-      "name": "F2L 23 · 흰색 U / 초록 엣지 U",
+      "name": "흰색 U / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: U\n목표: 완성 페어 · 오른쪽",
       "state": {
         "F": [
           "Y",
@@ -1581,9 +3046,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U R U R' F' U' F R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 오른쪽으로 유도",
+          "algorithm": "U R U2 R'",
+          "segments": [
+            {
+              "label": "완성 페어 오른쪽으로 유도",
+              "algorithm": "U R U2 R'",
+              "targetCaseId": "f2l-fr-03"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -1593,14 +3065,13 @@
     },
     {
       "id": "f2l-fr-24",
-      "name": "F2L 24 · 흰색 U / 초록 엣지 L",
+      "name": "흰색 U / 초록 엣지 L",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 L 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: L\n목표: 완성 페어 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -1807,9 +3278,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U' R' F' U2 F R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 왼쪽으로 유도",
+          "algorithm": "U' F' U2 F",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 유도",
+              "algorithm": "U' F' U2 F",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -1818,469 +3296,14 @@
       ]
     },
     {
-      "id": "f2l-fr-03",
-      "name": "F2L 03 · 흰색 F / 초록 엣지 U",
-      "category": "1. 두 조각 모두 위층",
-      "tags": [
-        "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
-      ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
-      "state": {
-        "F": [
-          "G",
-          "G",
-          "W",
-          "G",
-          "G",
-          "Y",
-          "G",
-          "G",
-          "G"
-        ],
-        "B": [
-          "B",
-          "O",
-          "O",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B"
-        ],
-        "R": [
-          "O",
-          "O",
-          "Y",
-          "B",
-          "O",
-          "O",
-          "Y",
-          "O",
-          "O"
-        ],
-        "L": [
-          "B",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ],
-        "U": [
-          "Y",
-          "Y",
-          "R",
-          "Y",
-          "Y",
-          "G",
-          "Y",
-          "Y",
-          "G"
-        ],
-        "D": [
-          "W",
-          "W",
-          "O",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ]
-      },
-      "protected": {
-        "F": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "R": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "D": [
-          true,
-          true,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      "focus": {
-        "F": [
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "R": [
-          true,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          true
-        ],
-        "D": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      "solutions": [
-        {
-          "name": "기본 삽입",
-          "algorithm": "U R U' R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
-        }
-      ],
-      "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "2. 바닥 면이 위를 보지 않는 경우",
-        "1. 위의 두 면이 같은 색"
-      ]
-    },
-    {
-      "id": "f2l-fr-04",
-      "name": "F2L 04 · 흰색 R / 초록 엣지 F",
-      "category": "1. 두 조각 모두 위층",
-      "tags": [
-        "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
-      ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
-      "state": {
-        "F": [
-          "Y",
-          "G",
-          "G",
-          "G",
-          "G",
-          "R",
-          "G",
-          "G",
-          "Y"
-        ],
-        "B": [
-          "B",
-          "B",
-          "R",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B"
-        ],
-        "R": [
-          "W",
-          "O",
-          "O",
-          "Y",
-          "O",
-          "O",
-          "O",
-          "O",
-          "O"
-        ],
-        "L": [
-          "G",
-          "G",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ],
-        "U": [
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "B",
-          "O",
-          "O"
-        ],
-        "D": [
-          "W",
-          "W",
-          "G",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ]
-      },
-      "protected": {
-        "F": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "R": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "D": [
-          true,
-          true,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      "focus": {
-        "F": [
-          false,
-          true,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "R": [
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          true,
-          true
-        ],
-        "D": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      "solutions": [
-        {
-          "name": "기본 삽입",
-          "algorithm": "U' F' U F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
-        }
-      ],
-      "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "2. 바닥 면이 위를 보지 않는 경우",
-        "1. 위의 두 면이 같은 색"
-      ]
-    },
-    {
       "id": "f2l-fr-08",
-      "name": "F2L 08 · 흰색 F / 초록 엣지 U",
+      "name": "흰색 F / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: U\n목표: 바닥색 위 · 오른쪽",
       "state": {
         "F": [
           "B",
@@ -2487,9 +3510,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U F U2 R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 오른쪽으로 유도",
+          "algorithm": "U' F' U2 F",
+          "segments": [
+            {
+              "label": "바닥색 위 오른쪽으로 유도",
+              "algorithm": "U' F' U2 F",
+              "targetCaseId": "f2l-fr-05"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -2500,14 +3530,13 @@
     },
     {
       "id": "f2l-fr-10",
-      "name": "F2L 10 · 흰색 R / 초록 엣지 R",
+      "name": "흰색 R / 초록 엣지 R",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: R\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -2714,236 +3743,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U' R' U2 F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
-        }
-      ],
-      "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "2. 바닥 면이 위를 보지 않는 경우",
-        "1. 위의 두 면이 같은 색"
-      ]
-    },
-    {
-      "id": "f2l-fr-14",
-      "name": "F2L 14 · 흰색 F / 초록 엣지 U",
-      "category": "1. 두 조각 모두 위층",
-      "tags": [
-        "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
-      ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
-      "state": {
-        "F": [
-          "O",
-          "G",
-          "W",
-          "G",
-          "G",
-          "Y",
-          "G",
-          "G",
-          "Y"
-        ],
-        "B": [
-          "Y",
-          "O",
-          "Y",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B"
-        ],
-        "R": [
-          "O",
-          "B",
-          "G",
-          "R",
-          "O",
-          "O",
-          "B",
-          "O",
-          "O"
-        ],
-        "L": [
-          "B",
-          "O",
-          "G",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ],
-        "U": [
-          "R",
-          "G",
-          "R",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "G"
-        ],
-        "D": [
-          "W",
-          "W",
-          "O",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ]
-      },
-      "protected": {
-        "F": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "R": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "D": [
-          true,
-          true,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      "focus": {
-        "F": [
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "B": [
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "R": [
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "U": [
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          true
-        ],
-        "D": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      "solutions": [
-        {
-          "name": "기본 삽입",
-          "algorithm": "U' R U R' U2 R U' R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "U R U2 R'",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "U R U2 R'",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -2954,14 +3763,13 @@
     },
     {
       "id": "f2l-fr-15",
-      "name": "F2L 15 · 흰색 F / 초록 엣지 U",
+      "name": "흰색 F / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: U\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "O",
@@ -3168,236 +3976,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U2 R' U2 R U' R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
-        }
-      ],
-      "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "2. 바닥 면이 위를 보지 않는 경우",
-        "1. 위의 두 면이 같은 색"
-      ]
-    },
-    {
-      "id": "f2l-fr-16",
-      "name": "F2L 16 · 흰색 R / 초록 엣지 L",
-      "category": "1. 두 조각 모두 위층",
-      "tags": [
-        "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
-      ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 L 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
-      "state": {
-        "F": [
-          "O",
-          "R",
-          "G",
-          "G",
-          "G",
-          "B",
-          "G",
-          "G",
-          "R"
-        ],
-        "B": [
-          "O",
-          "G",
-          "R",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B"
-        ],
-        "R": [
-          "W",
-          "O",
-          "G",
-          "Y",
-          "O",
-          "O",
-          "Y",
-          "O",
-          "O"
-        ],
-        "L": [
-          "Y",
-          "G",
-          "Y",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ],
-        "U": [
-          "B",
-          "Y",
-          "Y",
-          "O",
-          "Y",
-          "Y",
-          "B",
-          "Y",
-          "O"
-        ],
-        "D": [
-          "W",
-          "W",
-          "G",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ]
-      },
-      "protected": {
-        "F": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "R": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "D": [
-          true,
-          true,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      "focus": {
-        "F": [
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "R": [
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "L": [
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          true
-        ],
-        "D": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      "solutions": [
-        {
-          "name": "기본 삽입",
-          "algorithm": "U F' U' F U2 F' U F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "U F' U F U'",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "U F' U F U'",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -3408,14 +3996,13 @@
     },
     {
       "id": "f2l-fr-17",
-      "name": "F2L 17 · 흰색 R / 초록 엣지 B",
+      "name": "흰색 R / 초록 엣지 B",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 B 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: B\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "G",
@@ -3622,9 +4209,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U F' U2 F U2 F' U F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "U R U R' U2",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "U R U R' U2",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -3634,469 +4228,14 @@
       ]
     },
     {
-      "id": "f2l-fr-01",
-      "name": "F2L 01 · 흰색 R / 초록 엣지 U",
-      "category": "1. 두 조각 모두 위층",
-      "tags": [
-        "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
-      ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
-      "state": {
-        "F": [
-          "R",
-          "R",
-          "G",
-          "G",
-          "G",
-          "Y",
-          "G",
-          "G",
-          "Y"
-        ],
-        "B": [
-          "B",
-          "O",
-          "O",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B"
-        ],
-        "R": [
-          "W",
-          "O",
-          "O",
-          "G",
-          "O",
-          "O",
-          "G",
-          "O",
-          "O"
-        ],
-        "L": [
-          "Y",
-          "B",
-          "B",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ],
-        "U": [
-          "G",
-          "G",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "O"
-        ],
-        "D": [
-          "W",
-          "W",
-          "R",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ]
-      },
-      "protected": {
-        "F": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "R": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "D": [
-          true,
-          true,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      "focus": {
-        "F": [
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "B": [
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "R": [
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "U": [
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          true
-        ],
-        "D": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      "solutions": [
-        {
-          "name": "기본 삽입",
-          "algorithm": "R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
-        }
-      ],
-      "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "2. 바닥 면이 위를 보지 않는 경우",
-        "2. 위의 두 면이 다른 색"
-      ]
-    },
-    {
-      "id": "f2l-fr-02",
-      "name": "F2L 02 · 흰색 F / 초록 엣지 L",
-      "category": "1. 두 조각 모두 위층",
-      "tags": [
-        "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
-      ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 L 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
-      "state": {
-        "F": [
-          "G",
-          "G",
-          "W",
-          "G",
-          "G",
-          "O",
-          "G",
-          "G",
-          "O"
-        ],
-        "B": [
-          "R",
-          "R",
-          "Y",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B",
-          "B"
-        ],
-        "R": [
-          "O",
-          "B",
-          "B",
-          "Y",
-          "O",
-          "O",
-          "Y",
-          "O",
-          "O"
-        ],
-        "L": [
-          "G",
-          "G",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ],
-        "U": [
-          "O",
-          "Y",
-          "Y",
-          "O",
-          "Y",
-          "Y",
-          "Y",
-          "Y",
-          "G"
-        ],
-        "D": [
-          "W",
-          "W",
-          "B",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W",
-          "W"
-        ]
-      },
-      "protected": {
-        "F": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "R": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          true,
-          false,
-          true,
-          true
-        ],
-        "L": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "D": [
-          true,
-          true,
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      "focus": {
-        "F": [
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "B": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "R": [
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "L": [
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "U": [
-          false,
-          false,
-          false,
-          true,
-          false,
-          false,
-          false,
-          false,
-          true
-        ],
-        "D": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      "solutions": [
-        {
-          "name": "기본 삽입",
-          "algorithm": "F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
-        }
-      ],
-      "categoryPath": [
-        "1. 두 조각 모두 위층",
-        "2. 바닥 면이 위를 보지 않는 경우",
-        "2. 위의 두 면이 다른 색"
-      ]
-    },
-    {
       "id": "f2l-fr-11",
-      "name": "F2L 11 · 흰색 R / 초록 엣지 U",
+      "name": "흰색 R / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: U\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "R",
@@ -4303,9 +4442,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U R' U R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "U2 F' U' F",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "U2 F' U' F",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -4316,14 +4462,13 @@
     },
     {
       "id": "f2l-fr-12",
-      "name": "F2L 12 · 흰색 R / 초록 엣지 U",
+      "name": "흰색 R / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: U\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "O",
@@ -4530,9 +4675,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U' R' U R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "R U2 R' U'",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "R U2 R' U'",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -4543,14 +4695,13 @@
     },
     {
       "id": "f2l-fr-13",
-      "name": "F2L 13 · 흰색 R / 초록 엣지 U",
+      "name": "흰색 R / 초록 엣지 U",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: U\n목표: 바닥색 위 · 오른쪽",
       "state": {
         "F": [
           "R",
@@ -4757,9 +4908,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U F' U2 F U' R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 오른쪽으로 유도",
+          "algorithm": "F' U2 F U",
+          "segments": [
+            {
+              "label": "바닥색 위 오른쪽으로 유도",
+              "algorithm": "F' U2 F U",
+              "targetCaseId": "f2l-fr-05"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -4770,14 +4928,13 @@
     },
     {
       "id": "f2l-fr-18",
-      "name": "F2L 18 · 흰색 F / 초록 엣지 B",
+      "name": "흰색 F / 초록 엣지 B",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 B 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: B\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "B",
@@ -4984,9 +5141,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U' R' U F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "U2 R U R'",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "U2 R U R'",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -4997,14 +5161,13 @@
     },
     {
       "id": "f2l-fr-19",
-      "name": "F2L 19 · 흰색 F / 초록 엣지 R",
+      "name": "흰색 F / 초록 엣지 R",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: R\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -5211,9 +5374,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U2 R' U F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "R U2 R' U'",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "R U2 R' U'",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -5224,14 +5394,13 @@
     },
     {
       "id": "f2l-fr-20",
-      "name": "F2L 20 · 흰색 F / 초록 엣지 F",
+      "name": "흰색 F / 초록 엣지 F",
       "category": "1. 두 조각 모두 위층",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: F\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "G",
@@ -5438,9 +5607,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U F' U F U' F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "F' U2 F U",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "F' U2 F U",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -5451,14 +5627,13 @@
     },
     {
       "id": "f2l-fr-29",
-      "name": "F2L 29 · 흰색 D / 초록 엣지 U",
+      "name": "흰색 D / 초록 엣지 U",
       "category": "2. 코너가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 D 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: D · 엣지 초록색: U\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "B",
@@ -5665,9 +5840,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U2 F U2 R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "U F' U F",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "U F' U F",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -5677,14 +5859,13 @@
     },
     {
       "id": "f2l-fr-30",
-      "name": "F2L 30 · 흰색 D / 초록 엣지 F",
+      "name": "흰색 D / 초록 엣지 F",
       "category": "2. 코너가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 D 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: D · 엣지 초록색: F\n목표: 완성 페어 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -5891,9 +6072,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U R U' R' U' F' U F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 왼쪽으로 유도",
+          "algorithm": "U R U' R'",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 유도",
+              "algorithm": "U R U' R'",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -5903,14 +6091,13 @@
     },
     {
       "id": "f2l-fr-25",
-      "name": "F2L 25 · 흰색 R / 초록 엣지 F",
+      "name": "흰색 R / 초록 엣지 F",
       "category": "2. 코너가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: F\n목표: 완성 페어 · 왼쪽",
       "state": {
         "F": [
           "O",
@@ -6117,9 +6304,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U2 R' F' U2 F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 왼쪽으로 유도",
+          "algorithm": "F' U F",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 유도",
+              "algorithm": "F' U F",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -6129,14 +6323,13 @@
     },
     {
       "id": "f2l-fr-26",
-      "name": "F2L 26 · 흰색 R / 초록 엣지 U",
+      "name": "흰색 R / 초록 엣지 U",
       "category": "2. 코너가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: U\n목표: 다른 윗색 · 오른쪽",
       "state": {
         "F": [
           "B",
@@ -6343,9 +6536,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U F' U F R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "다른 윗색 오른쪽으로 유도",
+          "algorithm": "U F' U F",
+          "segments": [
+            {
+              "label": "다른 윗색 오른쪽으로 유도",
+              "algorithm": "U F' U F",
+              "targetCaseId": "f2l-fr-01"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -6355,14 +6555,13 @@
     },
     {
       "id": "f2l-fr-27",
-      "name": "F2L 27 · 흰색 F / 초록 엣지 U",
+      "name": "흰색 F / 초록 엣지 U",
       "category": "2. 코너가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 U 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: U\n목표: 완성 페어 · 오른쪽",
       "state": {
         "F": [
           "Y",
@@ -6569,9 +6768,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' F' U2 F R U2 R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 오른쪽으로 유도",
+          "algorithm": "U' R U' R'",
+          "segments": [
+            {
+              "label": "완성 페어 오른쪽으로 유도",
+              "algorithm": "U' R U' R'",
+              "targetCaseId": "f2l-fr-03"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -6581,14 +6787,13 @@
     },
     {
       "id": "f2l-fr-28",
-      "name": "F2L 28 · 흰색 F / 초록 엣지 F",
+      "name": "흰색 F / 초록 엣지 F",
       "category": "2. 코너가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: F\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "R",
@@ -6795,9 +7000,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U2 R U' R' F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "U F' U F",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "U F' U F",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -6807,14 +7019,13 @@
     },
     {
       "id": "f2l-fr-32",
-      "name": "F2L 32 · 흰색 R / 초록 엣지 F",
+      "name": "흰색 R / 초록 엣지 F",
       "category": "3. 엣지가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: F\n목표: 바닥색 위 · 오른쪽",
       "state": {
         "F": [
           "O",
@@ -7021,9 +7232,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U2 R' U R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 오른쪽으로 유도",
+          "algorithm": "U R U2 R'",
+          "segments": [
+            {
+              "label": "바닥색 위 오른쪽으로 유도",
+              "algorithm": "U R U2 R'",
+              "targetCaseId": "f2l-fr-05"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -7033,14 +7251,13 @@
     },
     {
       "id": "f2l-fr-34",
-      "name": "F2L 34 · 흰색 F / 초록 엣지 F",
+      "name": "흰색 F / 초록 엣지 F",
       "category": "3. 엣지가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: F\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -7247,9 +7464,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U' R U' R' U2 R U' R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "U' F' U2 F",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "U' F' U2 F",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -7259,14 +7483,13 @@
     },
     {
       "id": "f2l-fr-36",
-      "name": "F2L 36 · 흰색 U / 초록 엣지 F",
+      "name": "흰색 U / 초록 엣지 F",
       "category": "3. 엣지가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: F\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "O",
@@ -7473,9 +7696,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U2 R' F' U2 F U' R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "U F' U' F U'",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "U F' U' F U'",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -7485,14 +7715,13 @@
     },
     {
       "id": "f2l-fr-31",
-      "name": "F2L 31 · 흰색 U / 초록 엣지 R",
+      "name": "흰색 U / 초록 엣지 R",
       "category": "3. 엣지가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 U 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: U · 엣지 초록색: R\n목표: 완성 페어 · 왼쪽",
       "state": {
         "F": [
           "Y",
@@ -7699,9 +7928,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U F R U2 R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "완성 페어 왼쪽으로 유도",
+          "algorithm": "R U' R' U2",
+          "segments": [
+            {
+              "label": "완성 페어 왼쪽으로 유도",
+              "algorithm": "R U' R' U2",
+              "targetCaseId": "f2l-fr-04"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -7711,14 +7947,13 @@
     },
     {
       "id": "f2l-fr-33",
-      "name": "F2L 33 · 흰색 R / 초록 엣지 R",
+      "name": "흰색 R / 초록 엣지 R",
       "category": "3. 엣지가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: R\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "R",
@@ -7925,9 +8160,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U2 F' U F U R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "U' F' U2 F",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "U' F' U2 F",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -7937,14 +8179,13 @@
     },
     {
       "id": "f2l-fr-35",
-      "name": "F2L 35 · 흰색 F / 초록 엣지 R",
+      "name": "흰색 F / 초록 엣지 R",
       "category": "3. 엣지가 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: R\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "B",
@@ -8151,9 +8392,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "U2 R U R' U' F' U F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "U R U2 R'",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "U R U2 R'",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -8163,14 +8411,13 @@
     },
     {
       "id": "f2l-fr-40",
-      "name": "F2L 40 · 흰색 D / 초록 엣지 R",
+      "name": "흰색 D / 초록 엣지 R",
       "category": "4. 둘 다 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 D 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: D · 엣지 초록색: R\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "G",
@@ -8377,9 +8624,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U2 F U' F' U2 F U' R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "R U R' U' R U2 R' U'",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "R U R' U' R U2 R' U'",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -8389,14 +8643,13 @@
     },
     {
       "id": "f2l-fr-39",
-      "name": "F2L 39 · 흰색 R / 초록 엣지 F",
+      "name": "흰색 R / 초록 엣지 F",
       "category": "4. 둘 다 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: F\n목표: 같은 윗색 · 오른쪽",
       "state": {
         "F": [
           "Y",
@@ -8603,9 +8856,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U2 R' U R U' R' U R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 오른쪽으로 유도",
+          "algorithm": "F' U F",
+          "segments": [
+            {
+              "label": "같은 윗색 오른쪽으로 유도",
+              "algorithm": "F' U F",
+              "targetCaseId": "f2l-fr-16"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -8615,14 +8875,13 @@
     },
     {
       "id": "f2l-fr-41",
-      "name": "F2L 41 · 흰색 F / 초록 엣지 F",
+      "name": "흰색 F / 초록 엣지 F",
       "category": "4. 둘 다 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 F 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: F\n목표: 같은 윗색 · 왼쪽",
       "state": {
         "F": [
           "O",
@@ -8829,9 +9088,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U2 R' F' U2 F R U R' U' R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "같은 윗색 왼쪽으로 유도",
+          "algorithm": "R U' R'",
+          "segments": [
+            {
+              "label": "같은 윗색 왼쪽으로 유도",
+              "algorithm": "R U' R'",
+              "targetCaseId": "f2l-fr-14"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -8841,14 +9107,13 @@
     },
     {
       "id": "f2l-fr-37",
-      "name": "F2L 37 · 흰색 F / 초록 엣지 R",
+      "name": "흰색 F / 초록 엣지 R",
       "category": "4. 둘 다 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 F 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: F · 엣지 초록색: R\n목표: 바닥색 위 · 오른쪽",
       "state": {
         "F": [
           "G",
@@ -9055,9 +9320,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "F' U F R U' R' U2 R U R'",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 오른쪽으로 유도",
+          "algorithm": "F' U F",
+          "segments": [
+            {
+              "label": "바닥색 위 오른쪽으로 유도",
+              "algorithm": "F' U F",
+              "targetCaseId": "f2l-fr-05"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [
@@ -9067,14 +9339,13 @@
     },
     {
       "id": "f2l-fr-38",
-      "name": "F2L 38 · 흰색 R / 초록 엣지 R",
+      "name": "흰색 R / 초록 엣지 R",
       "category": "4. 둘 다 슬롯 안",
       "tags": [
         "F2L",
-        "FR 슬롯",
-        "앱 자체 번호"
+        "FR 슬롯"
       ],
-      "description": "전제: 십자가와 FR 이외의 세 슬롯이 완성되어 있습니다.\n목표: 흰색·초록색·주황색 코너와 초록색·주황색 엣지를 FR 슬롯에 함께 넣습니다.\n기준: U 노랑 / D 흰색 / F 초록 / R 주황.\n판별: 코너의 흰색은 R 방향, 엣지의 초록색은 R 방향입니다.\n케이스 번호는 앱의 분류 순서이며 다른 공식집 번호와 다를 수 있습니다.",
+      "description": "코너 흰색: R · 엣지 초록색: R\n목표: 바닥색 위 · 왼쪽",
       "state": {
         "F": [
           "G",
@@ -9281,9 +9552,16 @@
       },
       "solutions": [
         {
-          "name": "기본 삽입",
-          "algorithm": "R U' R' F' U F U2 F' U' F",
-          "note": "윗면 조정과 페어 만들기·삽입을 연결한 검증된 공식입니다. 가장 짧은 스피드 공식이라는 뜻은 아닙니다. 공식 완료 후 십자가와 다른 세 슬롯은 유지됩니다."
+          "name": "바닥색 위 왼쪽으로 유도",
+          "algorithm": "R U' R'",
+          "segments": [
+            {
+              "label": "바닥색 위 왼쪽으로 유도",
+              "algorithm": "R U' R'",
+              "targetCaseId": "f2l-fr-06"
+            }
+          ],
+          "note": "기본형 도달 시 종료 · 십자가와 다른 슬롯 유지"
         }
       ],
       "categoryPath": [

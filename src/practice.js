@@ -16,7 +16,7 @@ function runPracticeMove(){
  if(practiceRound.status==='ready'){practiceRound.status='running';practiceRound.start=performance.now();practiceRound.elapsed=0;updatePracticeClock()}
  practiceRound.moving=true;practiceRound.count++;document.querySelector('#practice-count').textContent=practiceRound.count+'수';practiceStatus.textContent='맞추는 중';refreshPracticeControls();
  performMove(name,variant,()=>{practiceRound.moving=false;if(practiceSolved()){
-  practiceRound.elapsed=performance.now()-practiceRound.start;practiceRound.status='complete';if(practiceClock!==null)cancelAnimationFrame(practiceClock);practiceClock=null;updatePracticeClock();practiceStatus.textContent='완성! 새 셔플로 다시 도전하세요.';
+  practiceRound.elapsed=performance.now()-practiceRound.start;practiceRound.status='complete';freeModeCodeBuffer='';if(practiceClock!==null)cancelAnimationFrame(practiceClock);practiceClock=null;updatePracticeClock();practiceStatus.textContent='완성! 새 셔플로 다시 도전하세요.';
   practicePending.length=0;
  }else if(practicePending.length){runPracticeMove();return}refreshPracticeControls()});
 }
@@ -37,13 +37,24 @@ for(const group of [{title:'바깥층',names:['R','L','U','D','F','B']},{title:'
 document.querySelector('#reset').addEventListener('click',()=>{if(currentMode!=='practice')return;if(practiceClock!==null)cancelAnimationFrame(practiceClock);practiceClock=null;practicePending.length=0;Object.assign(practiceRound,{status:'idle',moving:false,start:0,elapsed:0,count:0,scramble:[]});document.querySelector('#practice-count').textContent='0수';practiceStatus.textContent='셔플을 눌러 준비하세요.';updatePracticeClock();refreshPracticeControls()});
 const practiceKeyMap={KeyZ:['d',''],Slash:['d',"'"],KeyC:['l',''],KeyV:['l',"'"],KeyM:['r',''],Comma:['r',"'"],KeyA:['b',"'"],Semicolon:['b',''],ArrowLeft:['y',''],ArrowRight:['y',"'"],KeyF:['L',"'"],KeyD:['L',''],KeyJ:['R',''],KeyK:['R',"'"],KeyG:['F',''],KeyH:['F',"'"],KeyR:['U',"'"],KeyU:['U',''],KeyB:['f',''],KeyN:['f',"'"],KeyE:['u',"'"],KeyI:['u',''],KeyX:['D',''],Period:['D',"'"],KeyS:['B',"'"],KeyL:['B','']};
 const heldPracticeKeys=new Set();
+function handleFreeModeCode(e){
+ const target=e.target;
+ if(currentMode!=='practice'||practiceRound.status!=='idle'||modeBusy()||(typeof tutorialState!=='undefined'&&tutorialState.active)||e.ctrlKey||e.altKey||e.metaKey||e.shiftKey||target?.isContentEditable||['INPUT','TEXTAREA','SELECT'].includes(target?.tagName)||target?.closest?.('dialog')||(typeof exportDialog!=='undefined'&&exportDialog.open)){freeModeCodeBuffer='';return false}
+ if(e.repeat)return false;
+ const key=e.code?.startsWith('Key')?e.code.slice(3).toLowerCase():['Digit0','Numpad0'].includes(e.code)?'0':'';
+ freeModeCodeBuffer=key?(freeModeCodeBuffer+key).slice(-8):'';
+ if(freeModeCodeBuffer!=='test0000')return false;
+ freeModeCodeBuffer='';e.preventDefault();return setMode('free');
+}
+
 window.addEventListener('keydown',e=>{
+ if(handleFreeModeCode(e))return;
  if(currentMode!=='practice'||!practiceKeyMap[e.code]||e.ctrlKey||e.altKey||e.metaKey)return;
  const target=e.target;if(target?.isContentEditable||['INPUT','TEXTAREA','SELECT'].includes(target?.tagName)||target?.closest?.('dialog')||(typeof exportDialog!=='undefined'&&exportDialog.open))return;
  e.preventDefault();if(e.repeat||heldPracticeKeys.has(e.code))return;heldPracticeKeys.add(e.code);if(typeof tutorialState!=='undefined'&&tutorialState.active){tutorialKey(e.code);return}practiceMove(...practiceKeyMap[e.code]);
 });
 window.addEventListener('keyup',e=>heldPracticeKeys.delete(e.code));
-window.addEventListener('blur',()=>heldPracticeKeys.clear());
+window.addEventListener('blur',()=>{heldPracticeKeys.clear();freeModeCodeBuffer=''});
 refreshPracticeControls();
 
 
@@ -63,7 +74,7 @@ refreshPracticeControls();
 
 
 
-setMode('practice');
+// Start in learning mode; practice remains available from its tab.
 
 
 

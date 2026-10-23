@@ -20,12 +20,12 @@ function validateCaseLibrary(data){
   if(item.focus!==undefined)for(const face of faceOrder){const flags=item.focus[face];if(!Array.isArray(flags)||flags.length!==9||flags.some(v=>typeof v!=='boolean'))throw Error(`${prefix}: focus.${face}에는 true/false 9개가 필요합니다.`)}
   if(item.protected!==undefined)for(const face of faceOrder){const flags=item.protected[face];if(!Array.isArray(flags)||flags.length!==9||flags.some(v=>typeof v!=='boolean'))throw Error(`${prefix}: protected.${face}에는 true/false 9개가 필요합니다.`)}
   if(!Array.isArray(item.solutions)||item.solutions.length>100)throw Error(`${prefix}: solutions는 해법 목록이어야 합니다. 공식이 없으면 빈 배열을 사용하세요.`);
-  for(const solution of item.solutions){if(!solution||typeof solution!=='object')throw Error(`${prefix}: 해결 공식 형식을 확인해 주세요.`);checkText(solution.name,`${prefix} 해법 이름`,200);checkText(solution.algorithm,`${prefix} 공식`);if(solution.note!==undefined)checkText(solution.note,`${prefix} 해법 메모`,10000);try{parseAlgorithm(solution.algorithm)}catch(error){throw Error(`${prefix} 공식: ${error.message}`)}}
+  for(const solution of item.solutions){if(!solution||typeof solution!=='object')throw Error(`${prefix}: 해결 공식 형식을 확인해 주세요.`);checkText(solution.name,`${prefix} 해법 이름`,200);checkText(solution.algorithm,`${prefix} 공식`);if(solution.note!==undefined)checkText(solution.note,`${prefix} 해법 메모`,10000);try{parseAlgorithm(solution.algorithm)}catch(error){throw Error(`${prefix} 공식: ${error.message}`)};if(solution.segments!==undefined){if(!Array.isArray(solution.segments)||!solution.segments.length||solution.segments.length>20)throw Error(prefix+': segments 형식이 잘못되었습니다.');for(const segment of solution.segments){checkText(segment.label,prefix+' 구간 이름',200);checkText(segment.algorithm,prefix+' 구간 공식');parseAlgorithm(segment.algorithm)}const normalized=algorithm=>parseAlgorithm(algorithm).map(t=>t.text).join(' ');if(normalized(solution.segments.map(s=>s.algorithm).join(' '))!==normalized(solution.algorithm))throw Error(prefix+': 구간 공식과 전체 공식이 다릅니다.')}}
  }
  return data.cases;
 }
 function stateToStickers(state,protectedCells,focusCells){return definitions.flatMap((face,f)=>Array.from({length:9},(_,i)=>({...face,n:[...face.n],u:[...face.u],v:[...face.v],color:colorCodes[state[faceOrder[f]][i]],protected:protectedCells?.[faceOrder[f]]?.[i]!==false,focus:focusCells?.[faceOrder[f]]?.[i]===true,p:face.n.map((n,k)=>1.5*n+face.u[k]*(i%3-1)+face.v[k]*(1-Math.floor(i/3)))})))}
-function showCaseInfo(){const item=caseLibrary[Number(caseSelect.value)];if(!item)return;const solution=(item.solutions[Number(solutionSelect.value)||0]||{name:'',algorithm:'',note:''});document.querySelector('#case-info').textContent=[item.category,item.tags?.length?item.tags.map(t=>`#${t}`).join(' '):'',item.description,solution?.note].filter(Boolean).join('\n');document.querySelector('#playback-case-title').textContent=item.name;if(!caseSession){const steps=document.querySelector('#case-steps');steps.replaceChildren();for(const token of (solution.algorithm?parseAlgorithm(solution.algorithm):[])){const chip=document.createElement('span');chip.textContent=token.text;steps.append(chip)}}}
+function showCaseInfo(){const item=caseLibrary[Number(caseSelect.value)];if(!item)return;const solution=(item.solutions[Number(solutionSelect.value)||0]||{name:'',algorithm:'',note:''});document.querySelector('#case-info').textContent=[item.category,item.tags?.length?item.tags.map(t=>`#${t}`).join(' '):'',item.description,solution?.note].filter(Boolean).join('\n');document.querySelector('#playback-case-title').textContent=item.name;if(!caseSession)renderCaseFormula(solution)}
 function chooseCase(){const item=caseLibrary[Number(caseSelect.value)];solutionSelect.hidden=item.solutions.length<=1;solutionSelect.replaceChildren();item.solutions.forEach((s,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=s.name||`해법 ${i+1}`;solutionSelect.append(option)});solutionSelect.value='0';showCaseInfo()}
 function renderCaseOptions(){
  const tree=document.querySelector('#case-tree');tree.replaceChildren();
@@ -48,10 +48,15 @@ function loadSelectedCase(){
  if(typeof titleField!=='undefined'){titleField.value=item.name;algorithmField.value=solution.algorithm;noteField.value=[item.description,solution.note].filter(Boolean).join('\n')}
  initCasePlayback(item,solution);caseStatus.classList.remove('error');caseStatus.textContent=`${item.name} 상태를 불러왔습니다.`;draw();return true;
 }
+function renderCaseFormula(solution){
+ const steps=document.querySelector('#case-steps');steps.replaceChildren();const tokens=[],chips=[],segments=[];
+ const parts=solution.segments||[{algorithm:solution.algorithm||'',label:''}];
+ for(const part of parts){const group=document.createElement('div');group.className='case-segment';if(part.label){const heading=document.createElement('div');heading.className='case-segment-title';heading.textContent=part.label;group.append(heading)}const first=tokens.length;for(const token of parseAlgorithm(part.algorithm)){tokens.push(token);const chip=document.createElement('span');chip.textContent=token.text;group.append(chip);chips.push(chip)}segments.push({label:part.label,start:first,end:tokens.length});steps.append(group)}
+ return{tokens,chips,segments};
+}
 function initCasePlayback(item,solution){
- const steps=document.querySelector('#case-steps'),tokens=solution.algorithm?parseAlgorithm(solution.algorithm):[];steps.replaceChildren();
- const chips=tokens.map(token=>{const chip=document.createElement('span');chip.textContent=token.text;steps.append(chip);return chip});
- casePlayback={key:caseSelect.value+':'+solutionSelect.value,item,tokens,chips,index:0,snapshot:JSON.stringify(stickers)};
+ const formula=renderCaseFormula(solution);
+ casePlayback={key:caseSelect.value+':'+solutionSelect.value,item,...formula,index:0,snapshot:JSON.stringify(stickers)};
 }
 function prepareCasePlayback(replay){
  if(animation!==null||drag||returnAnimation!==null||queue.length||algorithmSession||caseSession)return false;
@@ -70,6 +75,7 @@ function playCase(continuous){
   const speed=caseSpeed;
   performMove(token.name,token.variant,()=>{if(caseSession!==session)return;playback.chips[i].className='done';playback.index++;playback.snapshot=JSON.stringify(stickers);
    if(playback.index===playback.tokens.length){finish('해법 실행 완료 · '+playback.tokens.length+'수');return}
+   const boundary=playback.segments.find(s=>s.end===playback.index);if(continuous&&boundary&&playback.segments.length>1){const following=playback.segments.find(s=>s.start===playback.index);finish(boundary.label+' 완료'+' · 배치를 확인한 뒤 재생을 누르세요.'+(following?' 다음: '+following.label:''));return}
    if(!continuous||session.stopped){finish(`${playback.index}/${playback.tokens.length}수 · 다음: ${playback.tokens[playback.index].text}`);return}
    next();
   },720/speed);
