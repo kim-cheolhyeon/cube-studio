@@ -6,15 +6,17 @@ function modeBusy(){return animation!==null||returnAnimation!==null||drag!==null
 function setMode(next){
  if(next===currentMode)return true;if(typeof tutorialState!=='undefined'&&tutorialState.active){document.querySelector('#mode-status').textContent='튜토리얼을 종료한 뒤 모드를 바꿔 주세요.';return false;}
  if(modeBusy()){document.querySelector('#mode-status').textContent='현재 회전이 끝난 뒤 모드를 바꿔 주세요.';return false}
- freeModeCodeBuffer='';modeStates[currentMode]=captureMode();currentMode=next;const saved=modeStates[next];
+ freeModeCodeBuffer='';if(currentMode!=='contact')modeStates[currentMode]=captureMode();currentMode=next;
+ if(next!=='contact'){const saved=modeStates[next];
  stickers=cloneCube(saved.stickers);useMask=saved.useMask;returnToggle.checked=saved.returnView;
  titleField.value=saved.title;algorithmField.value=saved.formula;noteField.value=saved.note;
- view=baseView;lookX=lookY=0;document.body.dataset.mode=next;
- for(const mode of ['learn','free','practice'])document.querySelector('#mode-'+mode).setAttribute('aria-pressed',String(next===mode));document.querySelector('#mode-status').textContent='';resize();return true;
+ view=baseView;lookX=lookY=0;}document.body.dataset.mode=next;document.querySelector('#contact-panel').hidden=next!=='contact';
+ for(const mode of ['learn','free','practice','contact'])document.querySelector('#mode-'+mode).setAttribute('aria-pressed',String(next===mode));document.querySelector('#mode-status').textContent='';if(next!=='contact')resize();return true;
 }
 document.querySelector('#mode-learn').addEventListener('click',()=>setMode('learn'));
 document.querySelector('#mode-free').addEventListener('click',()=>setMode('free'));
 document.querySelector('#mode-practice').addEventListener('click',()=>setMode('practice'));
+document.querySelector('#mode-contact').addEventListener('click',()=>setMode('contact'));
 document.querySelector('#to-free').addEventListener('click',()=>{
  if(currentMode!=='learn'||modeBusy()){document.querySelector('#mode-status').textContent='현재 회전이 끝난 뒤 복사해 주세요.';return}
  const copy=captureMode();copy.useMask=false;modeStates.free=copy;setMode('free');

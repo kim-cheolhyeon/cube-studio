@@ -20,6 +20,6 @@ node tools/build-site.cjs
 
 main에 올리면 Cloudflare가 자동으로 빌드하고 배포합니다. ZIP 업로드, GitHub Actions 배포, GitHub Secrets의 Cloudflare 토큰은 이 방식에 필요하지 않습니다.
 
-빌드는 JSON으로부터 데이터 번들을 생성하고 JavaScript 문법을 검사한 뒤 index.html·src·data만 dist에 모읍니다. 문서와 개발 도구는 웹에 업로드하지 않습니다.
+빌드는 JSON으로부터 데이터 번들을 생성하고 JavaScript 문법을 검사한 뒤 index.html·src·data·assets만 dist에 모읍니다. 문서와 개발 도구는 웹에 업로드하지 않습니다.
 
 배포 상태는 Cloudflare의 cube-studio 프로젝트 → 배포에서 확인합니다. 빌드 실패 시 로그를 확인하고 새 배포 성공 전에는 기존 사이트가 유지됩니다.

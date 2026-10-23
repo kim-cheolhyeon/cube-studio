@@ -9,7 +9,7 @@ for (const name of fs.readdirSync(path.join(root, 'src')).filter(name => name.en
 const output = path.join(root, 'dist');
 fs.rmSync(output, {recursive: true, force: true});
 fs.mkdirSync(output, {recursive: true});
-for (const name of ['index.html', 'src', 'data']) {
+for (const name of ['index.html', 'src', 'data', 'assets']) {
   fs.cpSync(path.join(root, name), path.join(output, name), {recursive: true});
 }
-console.log('Prepared dist: index.html, src, data');
+console.log('Prepared dist: index.html, src, data, assets');
