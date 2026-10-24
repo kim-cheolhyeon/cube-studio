@@ -10,9 +10,9 @@ const elements={};const get=s=>elements[s]||(elements[s]={value:'',textContent:'
 const originalQuery=sandbox.document.querySelector;sandbox.document.querySelector=s=>['#scene','#return-toggle','#rotations','#reset'].includes(s)?originalQuery(s):get(s);
 sandbox.document.querySelectorAll=()=>[];
 vm.runInContext(fs.readFileSync('src/algorithm.js','utf8'),sandbox);
-for(const file of ['data/beginner/cases.bundle.js','data/f2l/cases.bundle.js','src/cases.js'])vm.runInContext(fs.readFileSync(''+file,'utf8'),sandbox);
-assert.equal(run('caseLibrary.length'),150);
-const roots=get('#case-tree').children;assert.equal(roots.length,2);assert(roots.every(r=>r.open===false));assert.equal(roots[1].children[0].textContent,'F2L');
+for(const file of ['data/beginner/cases.bundle.js','data/f2l/cases.bundle.js','data/oll2/cases.bundle.js','data/pll2/cases.bundle.js','data/oll/cases.bundle.js','data/pll/cases.bundle.js','src/cases.js'])vm.runInContext(fs.readFileSync(''+file,'utf8'),sandbox);
+assert.equal(run('caseLibrary.length'),244);
+const roots=get('#case-tree').children;assert.equal(roots.length,6);assert(roots.every(r=>r.open===false));assert.equal(roots[1].children[0].textContent,'F2L');
 function drain(){for(let n=0;pending.size&&n<500;n++)tick(800);assert.equal(pending.size,0)}
 const actualKey="stickers.filter(s=>s.focus).map(s=>s.color+':'+s.p+':'+s.n).sort().join('|')";
 for(let i=109;i<150;i++){

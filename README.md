@@ -7,10 +7,13 @@
 ## 현재 기능
 
 - 시작 화면은 학습이며 초급 해법과 F2L 목록은 접힌 상태입니다.
-- 초급 해법 109개, F2L 41개를 제공합니다.
+- 초급 해법 109개, F2L 41개, 2-look OLL 10개, 2-look PLL 6개, Full OLL 57개, Full PLL 21개를 제공합니다.
 - 문의 탭에서 카카오톡 오픈채팅 링크·QR·참여코드를 확인할 수 있습니다.
 - F2L은 완성 페어·같은 윗색·다른 윗색·바닥색 위 기본형을 좌우로 구분합니다.
 - 일반 F2L 케이스는 기본형 도달까지만, 완성 페어 외 기본형은 완성 페어 도달까지만 재생합니다. 완성 페어 기본형만 삽입까지 수행합니다.
+- 2-look OLL은 십자가 3개와 코너 방향 7개로 나눠 학습합니다.
+- 2-look PLL은 코너 위치 2개와 엣지 위치 4개로 나눠 학습합니다.
+- Full OLL·PLL을 별도 목록에서 모양과 이동 조각별로 학습할 수 있습니다.
 - 풀이 재생·일시정지·속도 조절·이전 수·다음 수·문제 상태로 초기화를 지원합니다.
 - 큐브 드래그 관찰, 방향 복귀 선택, 보존 조각과 목표 페어 색 표시, 이미지·JSON 내보내기를 지원합니다.
 - 실전은 20수 셔플 후 첫 조작부터 시간을 재고 완성하면 조작과 타이머를 멈춥니다. 키보드 조작과 튜토리얼을 제공합니다.
@@ -24,17 +27,27 @@ cube-studio/
 ├─ assets/                    문의 QR 이미지
 ├─ data/
 │  ├─ beginner/               초급 109개 케이스
-│  └─ f2l/                    F2L 41개 케이스
+│  ├─ f2l/                    F2L 41개 케이스
+│  ├─ oll2/                   2-look OLL 10개 케이스
+│  ├─ pll2/                   2-look PLL 6개 케이스
+│  ├─ oll/                    Full OLL 57개 케이스
+│  └─ pll/                    Full PLL 21개 케이스
 ├─ docs/
 │  ├─ JSON-format.md          데이터와 색 표시 규칙
 │  ├─ F2L.md                  F2L 기본형과 연결 규칙
+│  ├─ 2-look-OLL.md           OLL 단계별 학습과 표시 규칙
+│  ├─ 2-look-PLL.md           PLL 단계별 학습과 표시 규칙
+│  ├─ Full-OLL-PLL.md         전체 OLL·PLL 분류와 검증
 │  ├─ beginner-guide.md       초급 단계 설명
 │  └─ deployment.md           GitHub·Cloudflare 배포
 └─ tools/
    ├─ build-case-bundle.cjs   JSON → 자동 불러오기용 번들
    ├─ build-site.cjs          문법 검사와 dist 생성
    ├─ check-f2l.cjs           도착 상태·보존 조각·풀이 이동 검사
-   └─ check-modes.cjs         시작 모드·입력 처리 검사
+   ├─ check-modes.cjs         시작 모드·입력 처리 검사
+   ├─ check-oll2.cjs          OLL 패턴과 보존·재생 검사
+   ├─ check-pll2.cjs          PLL 교환과 보존·재생 검사
+   └─ check-full-last-layer.cjs  Full OLL·PLL 검사
 ```
 
 각 data 하위 폴더의 cases.json이 원본이고 cases.bundle.js는 생성 파일입니다. 파일 하나는 해법 컬렉션 전체이며 목록의 폴더 계층은 categoryPath로 정의합니다. 케이스 이름은 표시용, id는 고유 연결용입니다.
@@ -46,6 +59,9 @@ JSON 수정 후 node tools/build-case-bundle.cjs를 실행하고 index.html을 �
 ```text
 node tools/check-f2l.cjs
 node tools/check-modes.cjs
+node tools/check-oll2.cjs
+node tools/check-pll2.cjs
+node tools/check-full-last-layer.cjs
 node tools/build-site.cjs
 ```
 

@@ -1,0 +1,1355 @@
+{
+  "formatVersion": 3,
+  "displayRule": "protected-and-current-target",
+  "method": "2-look-pll",
+  "sources": [
+    {
+      "title": "CubeSkills — 4 Look Last Layer (Feliks Zemdegs / Andy Klise)",
+      "url": "https://cubeskills.com/uploads/pdf/tutorials/4-look-last-layer.pdf"
+    }
+  ],
+  "cases": [
+    {
+      "id": "pll2-corner-adjacent",
+      "name": "인접 코너 교환",
+      "category": "1. 코너 위치 맞추기",
+      "categoryPath": [
+        "1. 코너 위치 맞추기"
+      ],
+      "tags": [
+        "2-look PLL"
+      ],
+      "description": "이웃한 코너 두 개를 교환합니다.\n같은 색 코너 쌍: L\n목표: 코너 위치",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "O",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "O",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "B",
+          "R",
+          "G",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "코너 위치 맞추기",
+          "algorithm": "R U R' U' R' F R2 U' R' U' R U R' F'",
+          "note": "코너 위치까지만 재생 · 첫 두 층과 윗면 방향 유지"
+        }
+      ]
+    },
+    {
+      "id": "pll2-corner-diagonal",
+      "name": "대각 코너 교환",
+      "category": "1. 코너 위치 맞추기",
+      "categoryPath": [
+        "1. 코너 위치 맞추기"
+      ],
+      "tags": [
+        "2-look PLL"
+      ],
+      "description": "대각선 코너 두 개를 교환합니다.\n같은 색 코너 쌍: 없음\n목표: 코너 위치",
+      "state": {
+        "F": [
+          "G",
+          "G",
+          "B",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "B",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "R",
+          "R",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "O",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "B": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "L": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          true
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "코너 위치 맞추기",
+          "algorithm": "R' U L' U2 R U' L R' U L' U2 R U' L U",
+          "note": "코너 위치까지만 재생 · 첫 두 층과 윗면 방향 유지"
+        }
+      ]
+    },
+    {
+      "id": "pll2-edge-ua",
+      "name": "3개 순환 · Ua",
+      "category": "2. 엣지 위치 맞추기",
+      "categoryPath": [
+        "2. 엣지 위치 맞추기",
+        "1. 맞은 엣지 1개"
+      ],
+      "tags": [
+        "2-look PLL"
+      ],
+      "description": "맞은 엣지 1개 · 나머지 세 개를 순환합니다.\n맞은 엣지: B\n목표: 큐브 완성",
+      "state": {
+        "F": [
+          "G",
+          "O",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "R",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "B": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "L": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "D": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "엣지 위치 맞추기",
+          "algorithm": "R U' R U R U R U' R' U' R2",
+          "note": "코너 위치·첫 두 층·윗면 방향 유지"
+        }
+      ]
+    },
+    {
+      "id": "pll2-edge-ub",
+      "name": "3개 순환 · Ub",
+      "category": "2. 엣지 위치 맞추기",
+      "categoryPath": [
+        "2. 엣지 위치 맞추기",
+        "1. 맞은 엣지 1개"
+      ],
+      "tags": [
+        "2-look PLL"
+      ],
+      "description": "맞은 엣지 1개 · Ua와 반대 방향으로 순환합니다.\n맞은 엣지: B\n목표: 큐브 완성",
+      "state": {
+        "F": [
+          "G",
+          "R",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "G",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "B": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "L": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "D": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "엣지 위치 맞추기",
+          "algorithm": "R2 U R U R' U' R' U' R' U R'",
+          "note": "코너 위치·첫 두 층·윗면 방향 유지"
+        }
+      ]
+    },
+    {
+      "id": "pll2-edge-h",
+      "name": "마주 보는 엣지 교환 · H",
+      "category": "2. 엣지 위치 맞추기",
+      "categoryPath": [
+        "2. 엣지 위치 맞추기",
+        "2. 맞은 엣지 0개"
+      ],
+      "tags": [
+        "2-look PLL"
+      ],
+      "description": "맞은 엣지 0개 · 앞뒤와 좌우를 서로 교환합니다.\n맞은 엣지: 없음\n목표: 큐브 완성",
+      "state": {
+        "F": [
+          "G",
+          "B",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "G",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "R",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "O",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "B": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "L": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "D": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "엣지 위치 맞추기",
+          "algorithm": "M2 U M2 U2 M2 U M2",
+          "note": "코너 위치·첫 두 층·윗면 방향 유지"
+        }
+      ]
+    },
+    {
+      "id": "pll2-edge-z",
+      "name": "이웃한 엣지 교환 · Z",
+      "category": "2. 엣지 위치 맞추기",
+      "categoryPath": [
+        "2. 엣지 위치 맞추기",
+        "2. 맞은 엣지 0개"
+      ],
+      "tags": [
+        "2-look PLL"
+      ],
+      "description": "맞은 엣지 0개 · 이웃한 엣지끼리 두 쌍을 교환합니다.\n맞은 엣지: 없음\n목표: 큐브 완성",
+      "state": {
+        "F": [
+          "G",
+          "O",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "B": [
+          "B",
+          "R",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B"
+        ],
+        "R": [
+          "O",
+          "G",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "L": [
+          "R",
+          "B",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "U": [
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y",
+          "Y"
+        ],
+        "D": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      },
+      "protected": {
+        "F": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "B": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "R": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "L": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "U": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "D": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "focus": {
+        "F": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "B": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "R": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "L": [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "U": [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "D": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "solutions": [
+        {
+          "name": "엣지 위치 맞추기",
+          "algorithm": "M2 U M2 U M' U2 M2 U2 M' U2",
+          "note": "코너 위치·첫 두 층·윗면 방향 유지"
+        }
+      ]
+    }
+  ]
+}

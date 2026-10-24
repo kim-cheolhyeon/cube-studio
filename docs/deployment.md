@@ -15,6 +15,9 @@
 ```text
 node tools/check-f2l.cjs
 node tools/check-modes.cjs
+node tools/check-oll2.cjs
+node tools/check-pll2.cjs
+node tools/check-full-last-layer.cjs
 node tools/build-site.cjs
 ```
 

@@ -98,7 +98,7 @@ document.querySelector('#case-restart').addEventListener('click',()=>{
  loadSelectedCase();
 });
 document.querySelector('#reset').addEventListener('click',()=>{if(typeof currentMode!=='undefined'&&currentMode!=='learn')return;caseSession=null;casePlayback=null;lockAlgorithm(false);document.querySelector('#case-steps').replaceChildren();caseStatus.textContent='큐브를 초기화했습니다. 케이스를 다시 불러올 수 있습니다.'});
-if(typeof beginnerCaseLibrary!=='undefined'){setCaseLibrary({formatVersion:3,cases:[...beginnerCaseLibrary.cases.map(item=>({...item,collection:'초급 해법'})),...(typeof f2lCaseLibrary!=='undefined'?f2lCaseLibrary.cases.map(item=>({...item,collection:'F2L'})):[])]});caseStatus.textContent='왼쪽에서 케이스를 클릭한 뒤 재생 또는 다음 수를 누르세요.';}
+if(typeof beginnerCaseLibrary!=='undefined'){setCaseLibrary({formatVersion:3,cases:[...beginnerCaseLibrary.cases.map(item=>({...item,collection:'초급 해법'})),...(typeof f2lCaseLibrary!=='undefined'?f2lCaseLibrary.cases.map(item=>({...item,collection:'F2L'})):[]),...(typeof oll2CaseLibrary!=='undefined'?oll2CaseLibrary.cases.map(item=>({...item,collection:'2-look OLL'})):[]),...(typeof pll2CaseLibrary!=='undefined'?pll2CaseLibrary.cases.map(item=>({...item,collection:'2-look PLL'})):[]),...(typeof ollCaseLibrary!=='undefined'?ollCaseLibrary.cases.map(item=>({...item,collection:'Full OLL'})):[]),...(typeof pllCaseLibrary!=='undefined'?pllCaseLibrary.cases.map(item=>({...item,collection:'Full PLL'})):[])]});caseStatus.textContent='왼쪽에서 케이스를 클릭한 뒤 재생 또는 다음 수를 누르세요.';}
 
 
 

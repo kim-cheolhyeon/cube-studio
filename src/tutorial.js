@@ -1,7 +1,7 @@
 let tutorialAdvanceTimer=null;
 const tutorialState={active:false,index:0,completed:0,accepted:0,pending:0,phase:'idle',snapshot:null};
-const tutorialLessons=['KeyJ','KeyK','KeyF','KeyD','KeyG','KeyH','KeyU','KeyR','KeyX','Period','KeyL','KeyS','KeyM','Comma','KeyC','KeyV','KeyB','KeyN','KeyI','KeyE','KeyZ','Slash','Semicolon','KeyA','ArrowLeft','ArrowRight'];
-const keyName=code=>({Period:'.',Comma:',',Slash:'/',Semicolon:';',ArrowLeft:'←',ArrowRight:'→'}[code]||code.replace('Key',''));
+const tutorialLessons=['KeyJ','KeyK','KeyF','KeyD','KeyG','KeyH','KeyT','KeyY','KeyU','KeyR','KeyX','Period','KeyL','KeyS','KeyM','Comma','KeyC','KeyV','KeyB','KeyN','KeyI','KeyE','KeyZ','Slash','Semicolon','KeyA','ArrowLeft','ArrowRight','ArrowUp','ArrowDown'];
+const keyName=code=>({Period:'.',Comma:',',Slash:'/',Semicolon:';',ArrowLeft:'←',ArrowRight:'→',ArrowUp:'↑',ArrowDown:'↓'}[code]||code.replace('Key',''));
 const tutorialInstruction=document.querySelector('#tutorial-instruction'),tutorialNext=document.querySelector('#tutorial-next');
 function tutorialLocks(locked){document.querySelector('#practice-shuffle').disabled=locked;document.querySelector('#reset').disabled=locked;document.querySelector('#tutorial-start').disabled=locked;document.querySelectorAll('[data-practice-move]').forEach(b=>b.disabled=locked||!['ready','running'].includes(practiceRound.status))}
 function tutorialLesson(){

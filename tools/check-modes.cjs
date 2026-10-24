@@ -10,7 +10,7 @@ const elements={};const get=s=>elements[s]||(elements[s]={value:'',textContent:'
 const originalQuery=sandbox.document.querySelector;sandbox.document.querySelector=s=>['#scene','#return-toggle','#rotations','#reset'].includes(s)?originalQuery(s):get(s);
 sandbox.document.querySelectorAll=()=>[];
 vm.runInContext(fs.readFileSync('src/algorithm.js','utf8'),sandbox);
-for(const file of ['data/beginner/cases.bundle.js','data/f2l/cases.bundle.js','src/cases.js'])vm.runInContext(fs.readFileSync(''+file,'utf8'),sandbox);
+for(const file of ['data/beginner/cases.bundle.js','data/f2l/cases.bundle.js','data/oll2/cases.bundle.js','data/pll2/cases.bundle.js','data/oll/cases.bundle.js','data/pll/cases.bundle.js','src/cases.js'])vm.runInContext(fs.readFileSync(''+file,'utf8'),sandbox);
 const listeners={};sandbox.window={addEventListener:(key,fn)=>(listeners[key]??=[]).push(fn)};sandbox.document.body={dataset:{}};
 const priorQuery=sandbox.document.querySelector;sandbox.document.querySelector=s=>{const el=priorQuery(s);el.setAttribute??=function(k,v){this[k]=v};return el};
 run("const titleField={value:''},algorithmField={value:''},noteField={value:''}");
